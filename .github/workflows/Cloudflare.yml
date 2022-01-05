@@ -29,6 +29,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
+        env:
+          email: ${{ secrets.EMAIL }}
+          key: ${{ secrets.KEy }}
         run: |
           echo Add other actions to build,
           curl --location --request PUT 'https://api.cloudflare.com/client/v4/zones/eb0c3244fbc7d9eb1581d0d0c11e2596/custom_pages/1000_errors' \
