@@ -31,12 +31,12 @@ jobs:
       - name: Run a multi-line script
         env:
           email: ${{ secrets.EMAIL }}
-          key: ${{ secrets.KEy }}
+          key: ${{ secrets.KEY }}
         run: |
           echo Add other actions to build,
           curl --location --request PUT 'https://api.cloudflare.com/client/v4/zones/eb0c3244fbc7d9eb1581d0d0c11e2596/custom_pages/1000_errors' \
-          --header 'X-Auth-Email: andrew.newton@psionline.com' \
-          --header 'X-Auth-Key: 33490d5a2669fd789fb89818602436e0bf351' \
+          --header 'X-Auth-Email: ${{ secrets.EMAIL }}' \
+          --header 'X-Auth-Key: ${{ secrets.KEY }}' \
           --header 'Content-Type: application/json' \
           --data-raw '{"url": "http://sorry.cubiksonline.us/index.html","state": "customized"
               }'
