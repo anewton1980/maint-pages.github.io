@@ -35,6 +35,6 @@ jobs:
           --header 'X-Auth-Email: andrew.newton@psionline.com' \
           --header 'X-Auth-Key: 33490d5a2669fd789fb89818602436e0bf351' \
           --header 'Content-Type: application/json' \
-          --data-raw '{"url": "https://eas-sorry.psiac.net/index2.html","state": "customized"
+          --data-raw '{"url": "http://sorry.cubiksonline.us/index.html","state": "customized"
               }'
           echo test, and deploy your project.
