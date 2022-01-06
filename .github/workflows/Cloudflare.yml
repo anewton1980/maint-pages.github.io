@@ -39,10 +39,10 @@ jobs:
           key: ${{ secrets.KEY }}
         run: |
           echo Add other actions to build,
-          curl --location --request PUT 'https://api.cloudflare.com/client/v4/zones/eb0c3244fbc7d9eb1581d0d0c11e2596/custom_pages/1000_errors' \
+          curl --location --request PUT 'https://api.cloudflare.com/client/v4/zones/${{ secret.ZONEID }}/custom_pages/1000_errors' \
           --header 'X-Auth-Email: ${{ secrets.EMAIL }}' \
           --header 'X-Auth-Key: ${{ secrets.KEY }}' \
           --header 'Content-Type: application/json' \
-          --data-raw '{"url": "http://sorry.cubiksonline.us/index2.html","state": "customized"
+          --data-raw '{"url": "${{ secret.URL }}","state": "customized"
               }'
           echo test, and deploy your project.
