@@ -43,6 +43,6 @@ jobs:
           --header 'X-Auth-Email: ${{ secrets.EMAIL }}' \
           --header 'X-Auth-Key: ${{ secrets.KEY }}' \
           --header 'Content-Type: application/json' \
-          --data-raw '{"url": "${{ secret.URL }}","state": "customized"
+          --data-raw '{"url": "${{ secrets.URL }}","state": "customized"
               }'
           echo test, and deploy your project.
