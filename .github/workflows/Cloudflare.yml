@@ -39,7 +39,7 @@ jobs:
           key: ${{ secrets.KEY }}
         run: |
           echo Add other actions to build,
-          curl --location --request PUT 'https://api.cloudflare.com/client/v4/zones/${{ secret.ZONEID }}/custom_pages/1000_errors' \
+          curl --location --request PUT 'https://api.cloudflare.com/client/v4/zones/${{ secrets.ZONEID }}/custom_pages/1000_errors' \
           --header 'X-Auth-Email: ${{ secrets.EMAIL }}' \
           --header 'X-Auth-Key: ${{ secrets.KEY }}' \
           --header 'Content-Type: application/json' \
