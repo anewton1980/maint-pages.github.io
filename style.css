@@ -1,0 +1,21 @@
+body {
+  font: normal 1.3em/1.8em "fs_me", arial, helvetica, sans-serif;
+  background: #d4dee0;
+  text-align: center;
+}
+h1, h2, h3, h4 {
+  font-family: "fs_me", arial, helvetica, sans-serif;
+  color:  #002A4E;
+  font-weight: normal;
+  font-style: normal;
+}
+#main {
+  background: white;
+  border-radius: 0 0 19px 19px;
+  max-width: 1180px;
+  margin: 4em auto 0 auto;
+  text-align: left;
+  box-shadow: 0 0 24px #8b9cae;
+  padding: 0 1em;
+  zoom: 1;
+}
