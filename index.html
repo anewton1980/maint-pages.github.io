@@ -11,6 +11,46 @@
       <img src="./images/cubiks.svg" class="logo" alt="" width="279" height="150">
     </header>
 <h1>PSI Maintenance</h1>
+  <script>
+  <!-- When the user clicks on the button,toggle between hiding and showing the dropdown content -->
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+     <table  class="center">
+          <tr>
+            <td><a href="http://sorry.cubiksonline.us/spanish.html" title="Click here for Spanish">Click here for Spanish</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://sorry.cubiksonline.us/chinese.html" title="Click here for Spanish">Click here for Chinese</a></td>
+          </tr>
+          <tr><td>
+            <!--Dropdown list -->
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Language</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="http://sorry.cubiksonline.us/spanish.html">Spanish</a>
+                <a href="http://sorry.cubiksonline.us/chinese.html">Chinese</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </td></tr>
+        </table>
  <h2>Click on the dropdown button to translate.</h2>
  <h3>Translate this page:</h3>
 
