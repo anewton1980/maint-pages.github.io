@@ -228,7 +228,11 @@ return "";
         <table>
           <tr>
             <td><a href="./spanish.html" title="Click here for Spanish">Click here for Spanish</a></td>
-            <td><a href="https://'+ getURLParameter('domain') +'/french.html" title="Click here for Spanish">Click here for French</a></td>
+            <td>
+              <script>document.write('<a href="http://'+ getURLParameter('domain') + '/french.html">Click here for French</a>')</script>
+
+<!--              <a href="https://'+ getURLParameter('domain') +'/french.html" title="Click here for Spanish">Click here for French</a>-->
+            </td>
           </tr>
           <tr>
             <td><a href="./chinese.html" title="Click here for Spanish">Click here for Chinese</a></td>
